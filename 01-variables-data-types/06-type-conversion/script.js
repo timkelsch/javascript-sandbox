@@ -1,24 +1,31 @@
-let amount = 'hello';
+//let amount = "100"
+//let amount = 100
 
 // Convert string to number
-amount = parseInt(amount);
-amount = +amount;
-amount = Number(amount);
+//amount = parseInt(amount)
+//amount = +amount
+//amount = Number(amount)
 
 // Convert number to string
-amount = amount.toString();
-amount = String(amount);
+// Primitives do not have methods
+// JS auto creates a temporary object wrapper for it here
+// amount = amount.toString();
+// amount = String(amount)
+
+// let amount = '99.5'
 
 // Convert string to decimal
-amount = parseFloat(amount);
+// amount = parseFloat(amount) // works
 
-// Convert number to boolean
-amount = Boolean(amount);
+// let amount = 1;
+// convert number to bool
+// amount = Boolean(amount) // true
 
-// Ways to get NaN
-console.log(Math.sqrt(-1));
-console.log(1 + NaN);
-console.log(undefined + undefined);
-console.log('foo' / 3);
+let amount = 'hello'
+amount = parseInt(amount) // NaN
+amount = Math.sqrt(-1) // NaN
+amount = 1 + NaN // NaN
+amount = undefined + undefined // NaN
+amount = 'foo' / 3 // NaN
 
 console.log(amount, typeof amount);

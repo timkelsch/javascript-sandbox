@@ -1,44 +1,39 @@
-// String
-const firstName = 'Sara';
+// string
+const firstName = 'Sarah'
 
 // Number
-const age = 30;
+const age = 30; 
 const temp = 98.9;
 
 // Boolean
 const hasKids = true;
 
 // Null
-const aptNumber = null;
+const aptNumber = null; 
 
 // Undefined
-// let score;
-const score = undefined;
+let score;
+
+// const output = aptNumber;
+// null 'Object' 
 
 // Symbol
-const id = Symbol('id');
+const id = Symbol
 
 // BigInt
-const n = 9007199254740991n;
+const n = 879234789298347890224n;
 
 // Reference Types
-
-const numbers = [1, 2, 3, 4];
+const numbers = [1,2,3,4]
 
 const person = {
-  name: 'Brad',
-};
-
-function sayHello() {
-  console.log('Hello');
+    name: 'Dick'
 }
 
-const output = sayHello;
+function sayHello() {
+    console.log('hello');
+}
+
+const output = sayHello
 
 console.log(output, typeof output);
-
-// More info on why typeof null == object
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#typeof_null
-
-//  More info on the "function object" type
-// https://262.ecma-international.org/5.1/#sec-11.4.3

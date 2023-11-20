@@ -1,5 +1,26 @@
 let d;
 
+d = new Date() // Date Fri Nov 17 2023 15:54:25 GMT-0700 (Mountain Standard Time)
+
+d = d.toString() // Fri Nov 17 2023 15:55:03 GMT-0700 (Mountain Standard Time)
+
+d = new Date(2023, 11, 17) // Date Sun Dec 17 2023 00:00:00 GMT-0700 (Mountain Standard Time)
+// Month is zero indexed dafuq
+
+d = new Date(2023, 11, 17, 14, 43, 23) // Date Sun Dec 17 2023 14:43:23 GMT-0700 (Mountain Standard Time)
+
+d = new Date('2023-11-17') // Date Thu Nov 16 2023 17:00:00 GMT-0700 (Mountain Standard Time)
+// Month is normal
+
+d = Date.now() // Unix timestamp: 1700261936459
+
+d = new Date() // 
+
+console.log(d);
+
+
+
+
 // Get today's date and time
 d = new Date();
 
@@ -32,4 +53,3 @@ d = new Date(1666962049745);
 // Convert from milliseconds to seconds
 d = Math.floor(Date.now() / 1000);
 
-console.log(d);

@@ -1,18 +1,22 @@
-// Value is stored in the stack
-const name = 'John';
-const age = 30;
+// Values are store on the stack 
+const name = 'Jon'
+const age = 30
 
-// Reference is stored in the heap
+// Reference values are stored on the heap
 const person = {
-  name: 'Brad',
-  age: 40,
-};
+    name: 'Tim',
+    age: 43
+}
 
 let newName = name;
-newName = 'Jonathan';
+newName = 'Timothy'
 
 let newPerson = person;
-newPerson.name = 'Bradley';
+newPerson.name = 'Dock'
 
-console.log(name, newName); // John, Jonathan
-console.log(person, newPerson); // { name: 'Bradley', age: 40 }, { name: 'Bradley', age: 40 }
+console.log(name, newName);
+console.log(person, newPerson);
+
+// if you a variable A assigned to an object variable B
+// when you change an attribute of A, it changes the 
+// attribute value of B as well since it's on the heap

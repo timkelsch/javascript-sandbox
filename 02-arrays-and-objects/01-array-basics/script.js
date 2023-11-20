@@ -16,17 +16,17 @@ x = `My favorite fruit is an ${fruits[2]}`;
 
 x = numbers.length;
 
-fruits[2] = 'pear';
+fruits[2] = 'pear'; // [ "apple", "grape", "pear" ]
 
 // length is not read-only
-// fruits.length = 2;
+fruits.length = 2; // truncates to length of 2
 
-fruits[3] = 'strawberry';
+fruits[3] = 'strawberry'; // [ "apple", "grape", <1 empty slot>, "strawberry" ]
 
 // Using the length as the index will always add on the the end
 fruits[fruits.length] = 'blueberry';
-fruits[fruits.length] = 'peach';
+fruits[fruits.length] = 'peach'; // [ "apple", "grape", <1 empty slot>, "strawberry", "blueberry", "peach" ]
 
 x = fruits;
+console.log(fruits);
 
-console.log(x);

@@ -1,3 +1,24 @@
+
+const x = Math.round(Math.random() * 100)
+const y = Math.round(Math.random() * 50)
+console.log(x, y);
+
+let sumOutput = x + y
+console.log(sumOutput)
+
+let differenceOutput = x - y
+console.log(differenceOutput)
+ 
+let productOutput = x * y
+console.log(productOutput)
+
+let quotientOutput = x / y
+console.log(quotientOutput)
+
+let rmOutput = x % y
+console.log(rmOutput)
+
+/*
 const x = Math.floor(Math.random() * 100 + 1);
 const y = Math.floor(Math.random() * 50 + 1);
 
@@ -25,3 +46,4 @@ console.log(quotOutput);
 const rm = x % y;
 const rmOutput = `${x} % ${y} = ${rm}`;
 console.log(rmOutput);
+*/

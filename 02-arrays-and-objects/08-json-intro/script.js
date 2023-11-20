@@ -5,16 +5,14 @@ const post = {
 };
 
 // Convert to JSON string
-const str = JSON.stringify(post);
 
-console.log(str.id);
+const str = JSON.stringify(post)
 
-// Parse JSON
-const obj = JSON.parse(str);
+// Parse
 
-console.log(obj.id);
+const obj = JSON.parse(str)
 
-// JSON & arrays
+
 const posts = [
   {
     id: 1,
@@ -24,10 +22,41 @@ const posts = [
   {
     id: 2,
     title: 'Post Two',
-    body: 'This is the body',
-  },
-];
+    body: 'This is the pp',
+  }
+]
 
-const str2 = JSON.stringify(posts);
+const str2 = JSON.stringify(posts)
 
-console.log(str2);
+const obj2 = JSON.parse([posts])
+
+console.log(obj2);
+
+
+// // Convert to JSON string
+// const str = JSON.stringify(post);
+
+// console.log(str.id);
+
+// // Parse JSON
+// const obj = JSON.parse(str);
+
+// console.log(obj.id);
+
+// // JSON & arrays
+// const posts = [
+//   {
+//     id: 1,
+//     title: 'Post One',
+//     body: 'This is the body',
+//   },
+//   {
+//     id: 2,
+//     title: 'Post Two',
+//     body: 'This is the body',
+//   },
+// ];
+
+// const str2 = JSON.stringify(posts);
+
+// console.log(str2);
