@@ -1,40 +1,65 @@
 const x = 100;
 
-// An If statement is a block
-if (true) {
-  console.log(x);
-  const y = 200;
+if(true) {
+  const y = 200
   console.log(x + y);
 }
 
-// console.log(y); // ReferenceError: y is not defined
+//doesnt work
+//console.log(x + y);
 
-// A loop is a block
 for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
 
-// console.log(i); // ReferenceError: i is not defined
+//console.log(i);
 
-// Using var
 if (true) {
-  const a = 500;
-  let b = 600;
-  var c = 700;
+  const a = 500
+  let b = 600
+  var c = 700
 }
 
+// var variables are not block scoped but ARE function scoped
+// var variables are global and added to the window object 
+// you usually do not want this
 console.log(c);
 
-// var IS function scoped
-function run() {
-  var d = 100;
-  console.log(d);
-}
+// An If statement is a block
+// if (true) {
+//   console.log(x);
+//   const y = 200;
+//   console.log(x + y);
+// }
 
-run();
+// // console.log(y); // ReferenceError: y is not defined
 
-// console.log(d);
+// // A loop is a block
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// // console.log(i); // ReferenceError: i is not defined
+
+// // Using var
+// if (true) {
+//   const a = 500;
+//   let b = 600;
+//   var c = 700;
+// }
+
+// console.log(c);
+
+// // var IS function scoped
+// function run() {
+//   var d = 100;
+//   console.log(d);
+// }
+
+// run();
+
+// // console.log(d);
 
 
-const foo = 1;
-var bar = 2; // Put on the window object
+// const foo = 1;
+// var bar = 2; // Put on the window object

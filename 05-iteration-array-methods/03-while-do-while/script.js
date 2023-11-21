@@ -7,7 +7,7 @@ while (i <= 20) {
 
 // Loop over arrays
 const arr = [10, 20, 30, 40, 50];
-
+i = 0
 while (i < arr.length) {
   console.log(arr[i]);
   i++;

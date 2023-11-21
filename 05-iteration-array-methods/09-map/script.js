@@ -21,47 +21,67 @@ const companies = [
   { name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
 ];
 
-// Create an array of company names
-const companyNames = companies.map((company) => company.name);
-// console.log(companyNames);
+const companyNames = companies.map(company => company.name)
+console.log(companyNames);
 
-// Create an array with just company and category
-const companyInfo = companies.map((company) => {
-  return {
-    name: company.name,
-    category: company.category,
-  };
-});
+const companyCC = companies.map(company => { return { name: company.name, 
+  category: company.category } })
+console.log(companyCC);
 
-// Create an array of objects with the name and the length of each company in years
-const companyYears = companies.map((company) => {
-  return {
-    name: company.name,
-    length: company.end - company.start + ' years',
-  };
-});
+const companyAge = companies.map(company => { return { name: company.name, 
+  age: company.end - company.start } })
+console.log(companyAge);
 
-console.log(companyYears);
-
-// Chain map methods
-const squareAndDouble = numbers
-  .map((number) => Math.sqrt(number))
-  .map((sqrt) => sqrt * 2);
-
-const squareAndDouble2 = numbers
-  .map(function (number) {
-    return Math.sqrt(number);
-  })
-  .map(function (sqrt) {
-    return sqrt * 2;
-  })
-  .map(function (sqrtDoubled) {
-    return sqrtDoubled * 3;
-  });
+const squareAndDouble = numbers.map(number => Math.sqrt(number)).map(sqrt => sqrt * 2)
+console.log(squareAndDouble);
 
 // Chaining different methods
-const evenDouble = numbers
-  .filter((number) => number % 2 === 0)
-  .map((number) => number * 2);
 
+const evenDouble = numbers.filter(number => number % 2 === 0)
+.map(number => number * 2)
 console.log(evenDouble);
+
+// // Create an array of company names
+// const companyNames = companies.map((company) => company.name);
+// // console.log(companyNames);
+
+// // Create an array with just company and category
+// const companyInfo = companies.map((company) => {
+//   return {
+//     name: company.name,
+//     category: company.category,
+//   };
+// });
+
+// // Create an array of objects with the name and the length of each company in years
+// const companyYears = companies.map((company) => {
+//   return {
+//     name: company.name,
+//     length: company.end - company.start + ' years',
+//   };
+// });
+
+// console.log(companyYears);
+
+// // Chain map methods
+// const squareAndDouble = numbers
+//   .map((number) => Math.sqrt(number))
+//   .map((sqrt) => sqrt * 2);
+
+// const squareAndDouble2 = numbers
+//   .map(function (number) {
+//     return Math.sqrt(number);
+//   })
+//   .map(function (sqrt) {
+//     return sqrt * 2;
+//   })
+//   .map(function (sqrtDoubled) {
+//     return sqrtDoubled * 3;
+//   });
+
+// // Chaining different methods
+// const evenDouble = numbers
+//   .filter((number) => number % 2 === 0)
+//   .map((number) => number * 2);
+
+// console.log(evenDouble);

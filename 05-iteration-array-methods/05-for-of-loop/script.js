@@ -7,7 +7,7 @@ const users = [{ name: 'Brad' }, { name: 'Kate' }, { name: 'Steve' }];
 // }
 
 for (const user of users) {
-  console.log(user.name);
+  console.log(user);
 }
 
 // Loop over strings
@@ -25,3 +25,6 @@ map.set('age', 30);
 for (const [key, value] of map) {
   console.log(key, value);
 }
+
+// *** for-in provides the indexes of the array or keys of objects
+// *** for-of provides the actual values/objects in an array/list 

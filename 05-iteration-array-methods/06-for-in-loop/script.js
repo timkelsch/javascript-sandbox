@@ -6,8 +6,9 @@ const colorObj = {
   color4: 'green',
 };
 
-for (const key in colorObj) {
-  console.log(key, colorObj[key]);
+for (const ass in colorObj) {
+  //console.log(key, colorObj[key]);
+  console.log(ass, colorObj[ass]);
 }
 
 // Loop through arrays
