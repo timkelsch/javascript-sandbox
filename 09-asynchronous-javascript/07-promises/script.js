@@ -3,29 +3,53 @@ const promise = new Promise((resolve, reject) => {
   // Do some async task
   setTimeout(() => {
     console.log('Async task complete');
-    resolve();
+    resolve()
   }, 1000);
-});
+})
 
-// promise.then(() => {
-//   console.log('Promise consumed..');
+promise.then(() => {
+  console.log('Promise consumed...');
+})
+
+// const promise = new Promise((resolve, reject) => {
+//   // Do some async task
+//   setTimeout(() => {
+//     console.log('Async task complete');
+//     resolve()
+//   }, 1000);
+// })
+
+// Confirm non-blocking. This should appear first:
+console.log('Hello from global scope');
+
+// // Create a promise
+// const promise = new Promise((resolve, reject) => {
+//   // Do some async task
+//   setTimeout(() => {
+//     console.log('Async task complete');
+//     resolve();
+//   }, 1000);
 // });
 
-const getUser = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    let error = true;
+// // promise.then(() => {
+// //   console.log('Promise consumed..');
+// // });
 
-    if (!error) {
-      resolve({ name: 'John', age: 30 });
-    } else {
-      reject('Error: Something went wrong');
-    }
-  }, 1000);
-});
+// const getUser = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     let error = true;
 
-getUser
-  .then((user) => console.log(user))
-  .catch((error) => console.log(error))
-  .finally(() => console.log('The promise has been resolved or rejected'));
+//     if (!error) {
+//       resolve({ name: 'John', age: 30 });
+//     } else {
+//       reject('Error: Something went wrong');
+//     }
+//   }, 1000);
+// });
 
-console.log('Hello from global scope');
+// getUser
+//   .then((user) => console.log(user))
+//   .catch((error) => console.log(error))
+//   .finally(() => console.log('The promise has been resolved or rejected'));
+
+// console.log('Hello from global scope');

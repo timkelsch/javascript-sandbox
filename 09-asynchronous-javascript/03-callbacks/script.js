@@ -1,8 +1,8 @@
 // function toggle(e) {
-//   e.target.classList.toggle('danger');
+//   e.target.classList.toggle('danger')
 // }
 
-// document.querySelector('button').addEventListener('click', toggle);
+// document.querySelector('button').addEventListener('click', toggle)
 
 const posts = [
   { title: 'Post One', body: 'This is post one' },
@@ -11,19 +11,48 @@ const posts = [
 
 function createPost(post, cb) {
   setTimeout(() => {
-    posts.push(post);
-    cb();
+    posts.push(post)
+    cb()
   }, 2000);
 }
 
 function getPosts() {
   setTimeout(() => {
     posts.forEach(function (post) {
-      const div = document.createElement('div');
-      div.innerHTML = `<strong>${post.title}</strong> - ${post.body}`;
-      document.querySelector('#posts').appendChild(div);
-    });
+      const div = document.createElement('div')
+      div.innerHTML = `<strong>${post.title}</strong> - ${post.body}`
+      document.querySelector('#posts').appendChild(div)
+    })
   }, 1000);
 }
 
-createPost({ title: 'Post Three', body: 'This is post' }, getPosts);
+createPost({title: 'Post Seven', body: 'This is fallujah'}, getPosts)
+//getPosts()
+
+
+
+// function toggle(e) {
+//   e.target.classList.toggle('danger');
+// }
+
+// document.querySelector('button').addEventListener('click', toggle);
+
+
+// function createPost(post, cb) {
+//   setTimeout(() => {
+//     posts.push(post);
+//     cb();
+//   }, 2000);
+// }
+
+// function getPosts() {
+//   setTimeout(() => {
+//     posts.forEach(function (post) {
+//       const div = document.createElement('div');
+//       div.innerHTML = `<strong>${post.title}</strong> - ${post.body}`;
+//       document.querySelector('#posts').appendChild(div);
+//     });
+//   }, 1000);
+// }
+
+// createPost({ title: 'Post Three', body: 'This is post' }, getPosts);

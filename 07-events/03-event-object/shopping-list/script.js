@@ -2,18 +2,18 @@ const logo = document.querySelector('img');
 
 function onClick(e) {
   // Event properties
-  // console.log(e.target);
-  // console.log(e.currentTarget);
-  // console.log(e.type);
-  // console.log(e.timeStamp);
-  // console.log(e.clientX);
-  // console.log(e.clientY);
-  // console.log(e.offsetX);
-  // console.log(e.offsetY);
-  // console.log(e.pageX);
-  // console.log(e.pageY);
-  // console.log(e.screenX);
-  // console.log(e.screenY);
+  console.log(e.target);
+  console.log(e.currentTarget);
+  console.log(e.type);
+  console.log(e.timeStamp);
+  console.log(e.clientX);
+  console.log(e.clientY);
+  console.log(e.offsetX);
+  console.log(e.offsetY);
+  console.log(e.pageX);
+  console.log(e.pageY);
+  console.log(e.screenX);
+  console.log(e.screenY);
 }
 
 function onDrag(e) {
@@ -29,10 +29,10 @@ logo.addEventListener('drag', onDrag);
 // });
 
 // e.preventDefault() method prevents the default behavior
-document.querySelector('a').addEventListener('click', function (e) {
-  e.preventDefault();
-  console.log('Link was clicked');
-});
+// document.querySelector('a').addEventListener('click', function (e) {
+//   e.preventDefault();
+//   console.log('Link was clicked');
+// });
 
 /*
 - `target` - The element that triggered the event
